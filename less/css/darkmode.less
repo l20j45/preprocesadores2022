@@ -1,0 +1,36 @@
+@dark-mode: true;
+
+.dark() when (@dark-mode =true) {
+    background-color: @color-primary;
+    color: @color-white;
+
+    .intro {
+        background-color: @color-secondary;
+    }
+
+    .caja {
+        span {
+            color: fade(@color-white, 80%);
+        }
+    }
+
+    .caja__contenido {
+        background-color: @color-secondary;
+        color: @color-white;
+    }
+
+    .articulo--principal h2 {
+        color: @color-secondary;
+    }
+
+    .caja__contenido a {
+        color: fade(@color-white, 50%);
+    }
+}
+.sombra-caja{
+    box-shadow: 0px 5px 15px 0px fade(@color-secondary,50%);
+}
+
+body {
+    .dark; //Mixin agregado 
+}
