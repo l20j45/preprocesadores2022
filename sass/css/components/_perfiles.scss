@@ -1,0 +1,59 @@
+$Fuentes1: 'Lato',sans-serif;
+$Fuentes2: 'Oswald',sans-serif;
+$color-primary:#333333;
+$color-white:#ffffff;
+$color-secondary:#8841DA;
+$color-variation:#3f579a;
+
+
+.perfil{
+    width: 50vw;
+    padding-top: 30px;
+    color:$color-white;
+    background-color: $color-secondary;
+    &__avatar{
+        display: block;
+        margin: 0 auto;
+        border-radius: 50em;
+    }
+    &__nombre {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        font-family: $Fuentes2;
+    }
+    &__titulo {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        color:rgba($color-white,.50);
+    }
+    &__boton{
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $Fuentes2;
+        color:rgba($color-white,.50);
+    }
+}
+
+
+
+.perfil__minibio{
+    margin: 0 auto;
+    padding-top: 20px;
+    h2{
+        @extend .perfil__nombre;
+    }
+    h3{
+        @extend .perfil__titulo;
+    }
+}
+
