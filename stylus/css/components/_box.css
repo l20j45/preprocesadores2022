@@ -1,0 +1,16 @@
+.caja {
+  max-width: 430px;
+}
+.caja__contenido {
+  padding: 20px;
+  background-color: WhiteColor;
+}
+.caja__contenido span {
+  text-transform: uppercase;
+  colo: SecundaryColor;
+}
+.caja__contenido h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
